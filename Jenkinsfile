@@ -4,7 +4,7 @@ pipeline {
       stage('code checkout'){
         steps{
           git url: 'https://github.com/Tharun20011/star-agile-health-care.git'
-          echo 'Git code checkout "
+          echo 'Git code checkout '
         }
          }
       stage('maven test'){
