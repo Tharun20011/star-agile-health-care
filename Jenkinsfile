@@ -7,16 +7,21 @@ pipeline {
           echo 'Git code checkout '
         }
          }
-      stage('maven test'){
+      stage('maven packagee'){
         steps{
-          sh 'mvn test'
-        }
-     }
-      stage('Maven package'){
-        steps{
-        sh 'mvn package'
-        }
+      
+      script {
+                    def mvnCmd1 = 'mvn clean'
+                    def mvnCmd = 'mvn package'
+                    sshagent(['ubuntu']) {
+                        sh "ssh -o StrictHostKeyChecking=no ubuntu@172.31.42.130 ${mvnCmd1}"
+                      sh "ssh -o StrictHostKeyChecking=no ubuntu@172.31.42.130 ${mvnCmd}"
+                       
+                    }
 }
+     }
+      }
+      
      
     stage('docker port expose with container'){
      steps{
