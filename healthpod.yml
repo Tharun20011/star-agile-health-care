@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: healthpod
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: healthapp
+  template:
+    metadata:
+      labels:
+        app: healthapp
+    spec:
+      containers:
+      - name: healthcon
+        image: tharunselvarangam/healthcaresg
+      ports:
+      - containerPort: 8555
