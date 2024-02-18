@@ -13,7 +13,7 @@ spec:
         app: healthapp
     spec:
       containers:
-      - name: medicurecon
+      - name: medicurecon 
         image: tharunselvarangam/medicureimgcapstone
         
 ---
@@ -29,5 +29,5 @@ spec:
     - protocol: TCP
       port: 8555
       targetPort: 8082
-      nodePort: 30001
+      nodePort: 31000
 
