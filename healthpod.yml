@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: medicurecon
-        image: tharunselvarangam/medicureimgsg
+        image: tharunselvarangam/medicureimgcapstone
         
 ---
 apiVersion: v1
@@ -29,5 +29,5 @@ spec:
     - protocol: TCP
       port: 8555
       targetPort: 8082
-      nodePort: 30000 
+      nodePort: 30001
 
