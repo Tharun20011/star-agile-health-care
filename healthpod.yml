@@ -13,8 +13,8 @@ spec:
         app: healthapp
     spec:
       containers:
-      - name: c01
-        image: tharunselvarangam/healthcaresg
+      - name: medicurecon
+        image: tharunselvarangam/medicureimgsg
         
 ---
 apiVersion: v1
