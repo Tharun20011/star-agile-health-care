@@ -19,12 +19,12 @@ pipeline {
        }
      stage('Docker Image') {
            steps {
-               sh 'docker buildx build -t tharunselvarangam/medicureimgsg . '
+               sh 'docker buildx build -t tharunselvarangam/medicureimgcapstone . '
            }
        }
        stage('Docker push') {
            steps {
-               sh 'docker push tharunselvarangam/medicureimgsg  '
+               sh 'docker push tharunselvarangam/medicureimgcapstone  '
            }
        }
        
