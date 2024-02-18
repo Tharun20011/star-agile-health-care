@@ -33,11 +33,7 @@ pipeline {
                sh 'kubectl apply -f healthpod.yml '
            }
        }
-       stage('K8s deployment node port') {
-           steps {
-               sh 'kubectl apply -f nodeport.yml '
-           }
-       }
+       
        
        
    }
