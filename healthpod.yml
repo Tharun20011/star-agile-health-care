@@ -29,5 +29,5 @@ spec:
     - protocol: TCP
       port: 8555
       targetPort: 8082
-      nodePort: 30000 # Choose a port number within the range 30000-32767
+      nodePort: 30000 
 
