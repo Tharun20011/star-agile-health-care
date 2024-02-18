@@ -15,7 +15,6 @@ spec:
       containers:
       - name: healthcon
         image: tharunselvarangam/healthcaresg
-        ports:
-        - containerPort: 8082
-      ports:
-      - containerPort: 8555
+        
+    ports:
+    - containerPort: 8555
